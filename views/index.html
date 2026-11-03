@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Districol V2 - El Futuro de los Corresponsales</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+        <!-- Navbar -->
+<nav class="navbar navbar-expand-lg mt-4 container navbar-custom px-4 py-3">
+    <!-- Logo actualizado -->
+    <a class="navbar-brand logo-shimmer d-flex align-items-center" href="/">
+        <img src="/img/logo.png" alt="Districol" class="logo-districol">
+    </a>
+    
+    <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <i class="bi bi-list text-verde fs-1"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-semibold gap-2">
+            <!-- En index.html: Ecosistema lleva active -->
+            <li class="nav-item"><a class="nav-link nav-link-custom text-verde active" href="/">Ecosistema</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom text-verde" href="#">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom text-verde" href="#">Beneficios</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom text-verde" href="/faq">Preguntas</a></li>
+        </ul>
+        <a href="/dashboard" class="btn btn-v2 py-2 px-4 mt-3 mt-lg-0 btn-glow">
+            Zona Aliados <i class="bi bi-arrow-right ms-1"></i>
+        </a>
+    </div>
+</nav>
+
+    <!-- Hero Bento -->
+    <section class="container mt-5 pt-3 mb-5 fade-in-up">
+        <div class="bento-grid">
+            <div class="bento-item-1 bento-card p-5 d-flex flex-column justify-content-center">
+                
+                <h1 class="display-5 fw-bold text-verde lh-sm mb-4">
+                    Conectamos tu negocio con el futuro financiero.
+                </h1>
+                <p class="fs-5 text-muted-custom mb-4">
+                    No somos solo un punto de pago. Somos el puente digital y físico que impulsa la inclusión financiera en Colombia, de forma simple y segura.
+                </p>
+                <div class="d-flex gap-3 flex-wrap">
+                    <a href="#" class="btn btn-v2">Quiero ser Aliado</a>
+                    <a href="#" class="btn btn-outline-verde">Ver Servicios</a>
+                </div>
+            </div>
+
+            <div class="bento-item-2 bento-card p-0 overflow-hidden position-relative img-hover-zoom">
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=800&auto=format&fit=crop" class="w-100 h-100 object-fit-cover" alt="Comercio">
+                <div class="position-absolute bottom-0 start-0 p-4 w-100" style="background: linear-gradient(transparent, rgba(255,255,255,0.9));">
+                    <h4 class="fw-bold text-verde mb-1">+5.000 Puntos</h4>
+                    <p class="small text-muted-custom fw-semibold mb-0">Conectados en tiempo real</p>
+                </div>
+            </div>
+
+            <div class="bento-item-3 bento-card p-4 d-flex flex-column justify-content-center text-center">
+                <div class="bg-verde-suave rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                    <i class="bi bi-graph-up-arrow text-verde fs-3"></i>
+                </div>
+                <h3 class="fw-bold text-verde mb-0">99.9%</h3>
+                <p class="small text-muted-custom fw-semibold mb-0">Disponibilidad</p>
+            </div>
+
+            <div class="bento-item-4 bento-card p-4 d-flex flex-column justify-content-center text-center">
+                <div class="bg-amarillo-suave rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                    <i class="bi bi-shield-check text-amarillo fs-3"></i>
+                </div>
+                <h3 class="fw-bold text-verde mb-0">100%</h3>
+                <p class="small text-muted-custom fw-semibold mb-0">Seguridad</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrusel -->
+    <section class="container pb-5 fade-in-up">
+        <div class="mb-4">
+            <h2 class="fw-bold text-verde mb-1">Nuestro Ecosistema</h2>
+            <p class="text-muted-custom mb-0">Descubre cómo transformamos tu negocio</p>
+        </div>
+
+        <div id="carouselEcosistema" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1600&h=600&fit=crop" class="d-block w-100" alt="Pagos">
+                        <div class="carousel-overlay"></div>
+                        <div class="carousel-caption">
+                            <div class="caption-content">
+                                <span class="badge bg-white text-verde mb-3 px-3 py-2 rounded-pill fw-bold">Pagos Rápidos</span>
+                                <h2 class="display-5 fw-bold text-white mb-3">Acepta pagos en tu negocio</h2>
+                                <p class="fs-5 text-white opacity-75 mb-0 d-none d-md-block">Olvídate del efectivo. Recibe transferencias, pagos con tarjeta y códigos QR de forma inmediata.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1556745753-6b649f019a91?q=80&w=1600&h=600&fit=crop" class="d-block w-100" alt="Retiros">
+                        <div class="carousel-overlay"></div>
+                        <div class="carousel-caption">
+                            <div class="caption-content">
+                                <span class="badge bg-white text-verde mb-3 px-3 py-2 rounded-pill fw-bold">Efectivo</span>
+                                <h2 class="display-5 fw-bold text-white mb-3">Retiros y depósitos</h2>
+                                <p class="fs-5 text-white opacity-75 mb-0 d-none d-md-block">Conviértete en el banco de tu comunidad. Ofrece retiros y depósitos sin que tus clientes tengan que viajar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=1600&h=600&fit=crop" class="d-block w-100" alt="Crecimiento">
+                        <div class="carousel-overlay"></div>
+                        <div class="carousel-caption">
+                            <div class="caption-content">
+                                <span class="badge bg-white text-verde mb-3 px-3 py-2 rounded-pill fw-bold">Crecimiento</span>
+                                <h2 class="display-5 fw-bold text-white mb-3">Haz crecer tu negocio</h2>
+                                <p class="fs-5 text-white opacity-75 mb-0 d-none d-md-block">Atrae más clientes a tu tienda y aumenta tus ingresos ofreciendo servicios financieros de valor.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc?q=80&w=1600&h=600&fit=crop" class="d-block w-100" alt="Comunidad">
+                        <div class="carousel-overlay"></div>
+                        <div class="carousel-caption">
+                            <div class="caption-content">
+                                <span class="badge bg-white text-verde mb-3 px-3 py-2 rounded-pill fw-bold">Comunidad</span>
+                                <h2 class="display-5 fw-bold text-white mb-3">Más cerca de la gente</h2>
+                                <p class="fs-5 text-white opacity-75 mb-0 d-none d-md-block">Sé el aliado que tu barrio necesita. Ofrece servicios financieros y ayuda a tu comunidad a crecer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselEcosistema" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselEcosistema" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+
+            <div class="carousel-indicators position-absolute bottom-0 mb-3">
+                <button type="button" data-bs-target="#carouselEcosistema" data-bs-slide-to="0" class="active bg-white" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselEcosistema" data-bs-slide-to="1" class="bg-white" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselEcosistema" data-bs-slide-to="2" class="bg-white" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselEcosistema" data-bs-slide-to="3" class="bg-white" aria-label="Slide 4"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aliados -->
+    <section class="container py-5 fade-in-up">
+        <div class="aliados-glass p-4 p-md-5">
+            <p class="text-center text-muted-custom fw-bold text-uppercase mb-4 small tracking-wide">Respaldados por las mejores entidades</p>
+            <div class="d-flex justify-content-center align-items-center gap-5 flex-wrap opacity-75">
+                <h4 class="fw-bold mb-0"><i class="bi bi-bank me-2"></i>Bancolombia</h4>
+                <h4 class="fw-bold mb-0"><i class="bi bi-credit-card me-2"></i>Visa</h4>
+                <h4 class="fw-bold mb-0"><i class="bi bi-credit-card-2-front me-2"></i>Mastercard</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impacto diagonal -->
+    <section class="section-diagonal fade-in-up position-relative">
+        <div class="position-absolute top-50 start-50 translate-middle bg-warning rounded-circle opacity-25" style="width: 400px; height: 400px; filter: blur(100px); z-index: -1;"></div>
+
+        <div class="container text-center position-relative z-1">
+            <h2 class="display-6 fw-bold text-verde mb-4">Crecemos contigo y con tu comunidad</h2>
+            <div class="row justify-content-center g-4 mt-4">
+                <div class="col-6 col-md-3">
+                    <h3 class="fw-bold text-verde mb-1">+5.000</h3>
+                    <p class="text-muted-custom fw-semibold small">Puntos habilitados</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h3 class="fw-bold text-verde mb-1">+500</h3>
+                    <p class="text-muted-custom fw-semibold small">Municipios</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h3 class="fw-bold text-verde mb-1">100%</h3>
+                    <p class="text-muted-custom fw-semibold small">Cobertura Nacional</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h3 class="fw-bold text-verde mb-1">24/7</h3>
+                    <p class="text-muted-custom fw-semibold small">Soporte Continuo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="container py-5 my-5 fade-in-up">
+        <h2 class="display-6 fw-bold text-verde mb-5 text-center">Lo que dicen nuestros aliados</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="bento-card p-4 h-100">
+                    <div class="d-flex text-amarillo mb-3">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                    <p class="text-muted-custom mb-4 fst-italic">"Desde que me vinculé con Districol, mi tienda se volvió el punto de referencia del barrio. La gente ya no tiene que ir al centro a hacer sus pagos."</p>
+                    <div class="d-flex align-items-center gap-3">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle" width="50" height="50" alt="Cliente">
+                        <div>
+                            <h6 class="fw-bold text-verde mb-0">María Gómez</h6>
+                            <small class="text-muted-custom">Tienda La Esquina</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bento-card p-4 h-100">
+                    <div class="d-flex text-amarillo mb-3">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                    <p class="text-muted-custom mb-4 fst-italic">"El panel de control es súper fácil de usar. Cierro mi día en 5 minutos y sé exactamente cuánto gané. Mis ingresos aumentaron un 30%."</p>
+                    <div class="d-flex align-items-center gap-3">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle" width="50" height="50" alt="Cliente">
+                        <div>
+                            <h6 class="fw-bold text-verde mb-0">Carlos Ramírez</h6>
+                            <small class="text-muted-custom">Papelería Central</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bento-card p-4 h-100">
+                    <div class="d-flex text-amarillo mb-3">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                    <p class="text-muted-custom mb-4 fst-italic">"Lo que más me gusta es el soporte. Siempre hay alguien disponible para ayudarme si un cliente tiene un problema con una transacción."</p>
+                    <div class="d-flex align-items-center gap-3">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" class="rounded-circle" width="50" height="50" alt="Cliente">
+                        <div>
+                            <h6 class="fw-bold text-verde mb-0">Ana Lucía Torres</h6>
+                            <small class="text-muted-custom">Droguería Salud+</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ser corresponsal -->
+    <section class="container mb-5 pb-5 fade-in-up position-relative z-1">
+        <div class="bento-card p-4 p-lg-5 overflow-hidden">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0 pe-lg-5">
+                    <h6 class="text-muted-custom fw-bold text-uppercase mb-3">Sé un corresponsal bancario</h6>
+                    <h2 class="display-6 fw-bold text-verde mb-4">Tu negocio puede ofrecer servicios que generan más valor</h2>
+                    <p class="fs-5 text-muted-custom mb-4">
+                        Haz parte de nuestra red de corresponsales y brinda a tus clientes soluciones financieras fáciles, seguras y rentables.
+                    </p>
+                    <a href="#" class="btn btn-v2-amarillo">Quiero ser corresponsal <i class="bi bi-arrow-right ms-2"></i></a>
+                </div>
+                <div class="col-lg-6 position-relative img-hover-zoom rounded-4">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=800&auto=format&fit=crop" alt="Tendero" class="img-fluid rounded-4 w-100" style="object-fit: cover; height: 350px;">
+                    <div class="position-absolute bottom-0 end-0 bg-white p-4 rounded-4 shadow-lg mb-n3 me-n3 d-none d-md-block" style="max-width: 280px; transform: translateY(10px); border: 1px solid rgba(0,0,0,0.05);">
+                        <ul class="list-unstyled mb-0 d-flex flex-column gap-3">
+                            <li class="d-flex align-items-center gap-3">
+                                <div class="bg-verde-suave p-2 rounded-circle text-verde"><i class="bi bi-graph-up-arrow"></i></div>
+                                <span class="small fw-bold text-verde">Más flujo de clientes</span>
+                            </li>
+                            <li class="d-flex align-items-center gap-3">
+                                <div class="bg-amarillo-suave p-2 rounded-circle text-amarillo"><i class="bi bi-cash-coin"></i></div>
+                                <span class="small fw-bold text-verde">Nuevos ingresos</span>
+                            </li>
+                            <li class="d-flex align-items-center gap-3">
+                                <div class="bg-verde-suave p-2 rounded-circle text-verde"><i class="bi bi-headset"></i></div>
+                                <span class="small fw-bold text-verde">Soporte continuo</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-4">
+        <div class="container mt-4">
+            <div class="row g-4">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="fw-bold mb-2">distri<span class="text-amarillo">col</span></h3>
+                    <p class="small opacity-75">Servicios financieros más cerca de ti. Llevamos el ecosistema bancario a tu negocio de forma simple y segura.</p>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h6 class="fw-bold mb-3 text-amarillo">Enlaces</h6>
+                    <ul class="list-unstyled small opacity-75 d-flex flex-column gap-2">
+                        <li><a href="#" class="text-decoration-none text-white opacity-75">Inicio</a></li>
+                        <li><a href="#" class="text-decoration-none text-white opacity-75">Servicios</a></li>
+                        <li><a href="#" class="text-decoration-none text-white opacity-75">Ser aliado</a></li>
+                        <li><a href="#" class="text-decoration-none text-white opacity-75">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
+                    <h6 class="fw-bold mb-3 text-amarillo">Información</h6>
+                    <ul class="list-unstyled small opacity-75 d-flex flex-column gap-2">
+                        <li><a href="#" class="text-decoration-none text-white opacity-75">Sobre nosotros</a></li>
+                        <li><a href="#" class="text-decoration-none text-white opacity-75">Cobertura</a></li>
+                        <li><a href="#" class="text-decoration-none text-white opacity-75">Términos y condiciones</a></li>
+                        <li><a href="#" class="text-decoration-none text-white opacity-75">Política de privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="fw-bold mb-3 text-amarillo">Contacto</h6>
+                    <ul class="list-unstyled small opacity-75 d-flex flex-column gap-3">
+                        <li class="d-flex align-items-center gap-2"><i class="bi bi-geo-alt"></i> Medellín, Colombia</li>
+                        <li class="d-flex align-items-center gap-2"><i class="bi bi-envelope"></i> info@districol.com.co</li>
+                        <li class="d-flex align-items-center gap-2"><i class="bi bi-telephone"></i> (604) 123 4567</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp flotante -->
+    <a href="https://wa.me/573001234567?text=Hola,%20quiero%20informaci%C3%B3n%20para%20ser%20corresponsal%20de%20Districol"
+       class="whatsapp-float"
+       target="_blank"
+       rel="noopener noreferrer">
+        <i class="bi bi-whatsapp"></i>
+        <span class="whatsapp-tooltip">¿Necesitas ayuda?</span>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/effects.js"></script>
+</body>
+</html>

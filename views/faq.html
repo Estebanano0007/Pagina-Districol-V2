@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes — Districol</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+       <!-- Navbar -->
+<nav class="navbar navbar-expand-lg mt-4 container navbar-custom px-4 py-3">
+    <!-- Logo actualizado -->
+    <a class="navbar-brand logo-shimmer d-flex align-items-center" href="/">
+        <img src="/img/logo.png" alt="Districol" class="logo-districol">
+    </a>
+    
+    <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <i class="bi bi-list text-verde fs-1"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-semibold gap-2">
+            <!-- En index.html: Ecosistema lleva active -->
+            <li class="nav-item"><a class="nav-link nav-link-custom text-verde " href="/">Ecosistema</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom text-verde" href="#">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom text-verde" href="#">Beneficios</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom text-verde active" href="/faq">Preguntas</a></li>
+        </ul>
+        <a href="/dashboard" class="btn btn-v2 py-2 px-4 mt-3 mt-lg-0 btn-glow">
+            Zona Aliados <i class="bi bi-arrow-right ms-1"></i>
+        </a>
+    </div>
+</nav>
+
+    <!-- HERO FAQ -->
+    <section class="container mt-5 pt-4 fade-in-up">
+        <div class="faq-hero text-center">
+            <span class="badge bg-amarillo-suave text-verde px-3 py-2 rounded-pill fw-bold mb-3">
+                <i class="bi bi-chat-dots me-1"></i> Centro de Ayuda
+            </span>
+            <h1 class="display-4 fw-bold text-verde mb-3 lh-sm">
+                ¿En qué podemos <span class="text-amarillo">ayudarte</span>?
+            </h1>
+            <p class="fs-5 text-muted-custom mb-4 mx-auto" style="max-width: 640px;">
+                Encuentra respuestas rápidas sobre Districol, vinculación, pagos y más. Si no encuentras lo que buscas, escríbenos.
+            </p>
+
+            <!-- Buscador -->
+            <div class="faq-search mx-auto">
+                <i class="bi bi-search"></i>
+                <input type="text" id="faqSearch" class="form-control" placeholder="Busca tu pregunta… (ej: requisitos, comisiones, soporte)">
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORÍAS -->
+    <section class="container mt-5 fade-in-up">
+        <div class="d-flex flex-wrap justify-content-center gap-2 mb-5 faq-filters" id="faqFilters">
+            <button class="faq-chip active" data-filter="all"><i class="bi bi-grid me-1"></i>Todas</button>
+            <button class="faq-chip" data-filter="general"><i class="bi bi-info-circle me-1"></i>General</button>
+            <button class="faq-chip" data-filter="pagos"><i class="bi bi-cash-stack me-1"></i>Pagos</button>
+            <button class="faq-chip" data-filter="seguridad"><i class="bi bi-shield-lock me-1"></i>Seguridad</button>
+            <button class="faq-chip" data-filter="soporte"><i class="bi bi-headset me-1"></i>Soporte</button>
+        </div>
+    </section>
+
+    <!-- LISTA FAQ -->
+    <section class="container pb-5 fade-in-up">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="accordion faq-accordion" id="faqAccordion">
+
+                    <!-- GENERAL -->
+                    <div class="accordion-item faq-item" data-category="general">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                <span class="faq-icon"><i class="bi bi-question-circle"></i></span>
+                                ¿Qué es Districol y cómo funciona?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body faq-body">
+                                Districol es una red de corresponsales bancarios que conecta tu negocio con el ecosistema financiero colombiano. A través de nuestra plataforma puedes ofrecer pagos, retiros, depósitos y otros servicios a tus clientes, generando nuevos ingresos sin necesidad de infraestructura compleja.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item faq-item" data-category="general">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                <span class="faq-icon"><i class="bi bi-clipboard-check"></i></span>
+                                ¿Qué requisitos necesito para vincularte?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body faq-body">
+                                Solo necesitas: ser mayor de edad, tener un negocio establecido (tienda, papelería, droguería, etc.), cédula de ciudadanía y un dispositivo con conexión a internet (smartphone o computador). El proceso de vinculación es 100% digital y toma menos de 10 minutos.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item faq-item" data-category="general">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                <span class="faq-icon"><i class="bi bi-clock-history"></i></span>
+                                ¿Cuánto tiempo tarda la vinculación?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body faq-body">
+                                El registro inicial toma menos de 10 minutos. Una vez validados tus datos (entre 24 y 48 horas hábiles), recibirás acceso completo a tu panel de aliado y podrás empezar a operar de inmediato.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PAGOS -->
+                    <div class="accordion-item faq-item" data-category="pagos">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                <span class="faq-icon"><i class="bi bi-cash-stack"></i></span>
+                                ¿Cuánto cuesta ser aliado de Districol?
+                            </button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body faq-body">
+                                Ser aliado de Districol es <strong>totalmente gratuito</strong>. No cobramos inscripción ni mensualidad. Solo ganas una comisión por cada transacción que realices a través de nuestra plataforma. Sin letra pequeña.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item faq-item" data-category="pagos">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                <span class="faq-icon"><i class="bi bi-wallet2"></i></span>
+                                ¿Cómo y cuándo recibo mis comisiones?
+                            </button>
+                        </h2>
+                        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body faq-body">
+                                Las comisiones se acumulan en tu panel de aliado y se transfieren automáticamente a tu cuenta bancaria cada semana. También puedes solicitar un retiro manual en cualquier momento desde tu dashboard.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SEGURIDAD -->
+                    <div class="accordion-item faq-item" data-category="seguridad">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                                <span class="faq-icon"><i class="bi bi-shield-lock"></i></span>
+                                ¿Mis transacciones y las de mis clientes son seguras?
+                            </button>
+                        </h2>
+                        <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body faq-body">
+                                Absolutamente. Trabajamos con entidades bancarias reguladas por la Superintendencia Financiera de Colombia. Toda la información viaja cifrada de extremo a extremo y cada transacción queda registrada con trazabilidad completa.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SOPORTE -->
+                    <div class="accordion-item faq-item" data-category="soporte">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">
+                                <span class="faq-icon"><i class="bi bi-headset"></i></span>
+                                ¿Qué pasa si tengo un problema con una transacción?
+                            </button>
+                        </h2>
+                        <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body faq-body">
+                                Cuentas con soporte 24/7 por WhatsApp, teléfono y correo. Nuestro equipo está capacitado para resolver cualquier novedad en tiempo récord. Además, desde tu panel puedes radicar y hacer seguimiento a cualquier reclamación.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item faq-item" data-category="soporte">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8">
+                                <span class="faq-icon"><i class="bi bi-telephone"></i></span>
+                                ¿Cómo puedo contactar al equipo de Districol?
+                            </button>
+                        </h2>
+                        <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body faq-body">
+                                Puedes escribirnos por WhatsApp, llamarnos al (604) 123 4567 o enviarnos un correo a info@districol.com.co. También respondemos por nuestras redes sociales de lunes a domingo.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Mensaje vacío para el buscador -->
+                <div id="faqEmpty" class="text-center py-5 d-none">
+                    <i class="bi bi-search fs-1 text-muted-custom mb-3 d-block"></i>
+                    <h5 class="fw-bold text-verde mb-2">No encontramos resultados</h5>
+                    <p class="text-muted-custom mb-0">Prueba con otra palabra o escríbenos directamente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="container mb-5 pb-5 fade-in-up">
+        <div class="faq-cta bento-card p-5 text-center position-relative overflow-hidden">
+            <div class="position-absolute top-50 start-50 translate-middle bg-warning rounded-circle opacity-25" style="width: 320px; height: 320px; filter: blur(90px); z-index: 0;"></div>
+            <div class="position-relative z-1">
+                <span class="badge bg-amarillo-suave text-verde px-3 py-2 rounded-pill fw-bold mb-3">¿Aún tienes dudas?</span>
+                <h2 class="display-6 fw-bold text-verde mb-3">Estamos para ayudarte</h2>
+                <p class="fs-5 text-muted-custom mb-4 mx-auto" style="max-width: 520px;">
+                    Habla con un asesor y resuelve todas tus preguntas en minutos.
+                </p>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <a href="https://wa.me/573001234567?text=Hola,%20tengo%20una%20pregunta%20sobre%20Districol" target="_blank" rel="noopener" class="btn btn-v2">
+                        <i class="bi bi-whatsapp me-2"></i>Hablar por WhatsApp
+                    </a>
+                    <a href="/" class="btn btn-outline-verde">
+                        Volver al inicio
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-4">
+        <div class="container mt-4">
+            <div class="row g-4">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="fw-bold mb-2">distri<span class="text-amarillo">col</span></h3>
+                    <p class="small opacity-75">Servicios financieros más cerca de ti. Llevamos el ecosistema bancario a tu negocio de forma simple y segura.</p>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h6 class="fw-bold mb-3 text-amarillo">Enlaces</h6>
+                    <ul class="list-unstyled small opacity-75 d-flex flex-column gap-2">
+                        <li><a href="/" class="text-decoration-none text-white opacity-75">Inicio</a></li>
+                        <li><a href="#" class="text-decoration-none text-white opacity-75">Servicios</a></li>
+                        <li><a href="#" class="text-decoration-none text-white opacity-75">Ser aliado</a></li>
+                        <li><a href="/faq.html" class="text-decoration-none text-white opacity-75">Preguntas</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
+                    <h6 class="fw-bold mb-3 text-amarillo">Información</h6>
+                    <ul class="list-unstyled small opacity-75 d-flex flex-column gap-2">
+                        <li><a href="#" class="text-decoration-none text-white opacity-75">Sobre nosotros</a></li>
+                        <li><a href="#" class="text-decoration-none text-white opacity-75">Cobertura</a></li>
+                        <li><a href="#" class="text-decoration-none text-white opacity-75">Términos y condiciones</a></li>
+                        <li><a href="#" class="text-decoration-none text-white opacity-75">Política de privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="fw-bold mb-3 text-amarillo">Contacto</h6>
+                    <ul class="list-unstyled small opacity-75 d-flex flex-column gap-3">
+                        <li class="d-flex align-items-center gap-2"><i class="bi bi-geo-alt"></i> Medellín, Colombia</li>
+                        <li class="d-flex align-items-center gap-2"><i class="bi bi-envelope"></i> info@districol.com.co</li>
+                        <li class="d-flex align-items-center gap-2"><i class="bi bi-telephone"></i> (604) 123 4567</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp flotante -->
+    <a href="https://wa.me/573001234567?text=Hola,%20tengo%20una%20pregunta%20sobre%20Districol"
+       class="whatsapp-float"
+       target="_blank"
+       rel="noopener noreferrer">
+        <i class="bi bi-whatsapp"></i>
+        <span class="whatsapp-tooltip">¿Necesitas ayuda?</span>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/effects.js"></script>
+
+    <!-- JS específico de la vista FAQ -->
+    <script>
+        // --- Buscador en vivo ---
+        const searchInput = document.getElementById('faqSearch');
+        const faqItems = document.querySelectorAll('.faq-item');
+        const emptyState = document.getElementById('faqEmpty');
+        const chips = document.querySelectorAll('.faq-chip');
+        let activeFilter = 'all';
+
+        function filterFAQ() {
+            const term = searchInput.value.toLowerCase().trim();
+            let visibleCount = 0;
+
+            faqItems.forEach(item => {
+                const text = item.textContent.toLowerCase();
+                const category = item.dataset.category || 'all';
+                const matchesSearch = term === '' || text.includes(term);
+                const matchesFilter = activeFilter === 'all' || category === activeFilter;
+                const show = matchesSearch && matchesFilter;
+
+                item.style.display = show ? '' : 'none';
+                if (show) visibleCount++;
+            });
+
+            emptyState.classList.toggle('d-none', visibleCount > 0);
+        }
+
+        searchInput.addEventListener('input', filterFAQ);
+
+        // --- Filtros por categoría ---
+        chips.forEach(chip => {
+            chip.addEventListener('click', () => {
+                chips.forEach(c => c.classList.remove('active'));
+                chip.classList.add('active');
+                activeFilter = chip.dataset.filter;
+                filterFAQ();
+            });
+        });
+    </script>
+</body>
+</html>
